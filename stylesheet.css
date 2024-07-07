@@ -164,23 +164,43 @@ body {
 
 
 
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.home-content {
+    max-width: 600px;
+    width: 50%;
+    text-align: center;
+    order: 1; /* Ensure it appears first in source order */
+}
+
+.image-content {
+    max-width: 600px;
+    width: 50%;
+    order: 2; /* Ensure it appears second in source order */
+}
 
 .home {
     position: relative;
     width: 100%;
-  justify-content: space-between;
-
-   height: 100vh;
-   background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat; 
-   background-size: cover;
-   background-position: center;
-   display: flex;
-   align-items: center;
-   padding: 70px 10% 0;
+    justify-content: space-between;
+    height: 100vh;
+    background: url() no-repeat; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px 10% 0;
 
 } 
 .home-content {
     max-width: 600px;
+    width: 50%; /* Adjust width as needed */
+    text-align: center;
 }
 .home-content h3 {
     font-size: 32px;
@@ -377,6 +397,46 @@ body {
    
     transform: translateY(-10px);
 }
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        height: auto; /* Adjust height for smaller screens */
+        padding: 50px 5%;
+    }
+
+    .home-content{
+        width: 600px;
+        order: initial;
+    }
+    .image-content{
+        align-items: center;
+        width: 200px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .home-sci a {
+        font-size: 16px;
+    }
+
+    .btn-box {
+        font-size: 16px;
+    }
+}
+
 
 
 
