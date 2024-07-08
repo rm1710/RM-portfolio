@@ -29,4 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
         link.download = 'Resume.pdf';
         link.click();
     });
+
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // These IDs from the previous steps
+        const serviceID = 'service_vomx4o7';
+        const templateID = 'template_s7t10to';
+        
+        const formData = {
+            name: this.querySelector('#name').value,
+            email: this.querySelector('#email').value,
+            subject: this.querySelector('#subject').value,
+            message: this.querySelector('#message').value
+        };
+        emailjs.sendForm(serviceID, templateID, formData)
+            .then(() => {
+                alert('Message sent successfully!');
+            }, (error) => {
+                console.error('Error:', error);
+                alert('Failed to send the message. Please try again .');
+            });
+    });
 });
