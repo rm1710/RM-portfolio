@@ -387,6 +387,7 @@ body {
 @media (max-width: 1024px) {
     .home{
         margin-bottom: 450px;
+        padding-top: 80px;
     }
 
     .container{
