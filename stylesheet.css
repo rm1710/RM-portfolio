@@ -96,7 +96,7 @@ body {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
-    font-size: 4rem;
+    font-size: 2.5rem;
     display: none;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .close-menu {
-    top: 4%;
+    top: 6%;
     left: 20px;
     transform: translateY(-50%);
 }
@@ -119,7 +119,7 @@ body {
         align-items: center;
         justify-content: center;
         width: 80%;
-        height: 60vh;
+        height: 90vh;
         position: fixed;
         top: 0;
         right: -100%;
