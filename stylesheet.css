@@ -82,7 +82,7 @@ body {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 1px;
+    height: 4px;
     background-color: var(--color1);
     transition: 0.15s ease-in-out;
 }
@@ -96,7 +96,7 @@ body {
     position: absolute;
     color: var(--color1);
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 4rem;
     display: none;
 }
 
@@ -114,11 +114,12 @@ body {
 
 @media (max-width: 610px) {
     .menu {
+        font-size: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 80%;
-        height: 100vh;
+        height: 60vh;
         position: fixed;
         top: 0;
         right: -100%;
@@ -719,8 +720,6 @@ section {
 
 
 
-
-/* Existing CSS code */
 .main-text {
     padding-top: 130px;
     margin-top: 200px;
@@ -800,13 +799,14 @@ section {
     height: 100%;
 }
 
-/* Responsive CSS code */
+
 @media screen and (max-width: 1024px) {
     .main-text {
         padding-top: 120px;
         margin-top: 150px;
     }
     .main-text h2 {
+        margin-top: 40px;
         font-size: 50px;
     }
     .portfolio-content {
@@ -820,13 +820,17 @@ section {
         margin-top: 120px;
     }
     .main-text h2 {
+        margin-top: 120px;
         font-size: 40px;
     }
     .portfolio-content {
-        padding: 30px;
+        padding: 20px;
         grid-template-columns: 1fr;
     }
     .layer {
+        font-size: 70px;
+        width: 100%;
+        height: 100%;
         padding: 0 20px;
     }
     .layer h5 {
@@ -850,6 +854,9 @@ section {
     }
     .layer {
         padding: 0 10px;
+        font-size: 70px;
+        width: 50px;
+        height: 40px;
     }
     .layer h5 {
         font-size: 16px;
@@ -858,9 +865,9 @@ section {
         font-size: 0.8rem;
     }
     .layer i {
-        font-size: 18px;
+        font-size: 70px;
         width: 50px;
-        height: 50px;
+        height: 40px;
     }
 }
 

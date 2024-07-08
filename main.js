@@ -22,4 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         openMenu.classList.remove('active');
         closeMenu.classList.remove('active');
     });
+
+    downloadCvButton.addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.href = 'Resume.pdf';
+        link.download = 'Resume.pdf';
+        link.click();
+    });
 });
