@@ -112,7 +112,7 @@ body {
     transform: translateY(-50%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .menu {
         font-size: 20px;
@@ -384,10 +384,14 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .home{
+        margin-bottom: 650px;
+    }
 
     .container{
         align-items: center;
+
     }
     .home-content h3 {
         font-size: 24px;
@@ -637,7 +641,7 @@ section {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .container1 {
         margin-bottom: 80px;
     }
@@ -744,7 +748,7 @@ section {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     layer h5{
         font-size: 40px;
     }
@@ -923,7 +927,7 @@ form textarea {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .contact {
         padding-left: 10px;
         margin-top: 80px;
@@ -950,33 +954,6 @@ form textarea {
     .contact-form form .send {
         padding: 12px 50px;
         font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .contact {
-        padding-left: 5px;
-        margin-top: 60px;
-    }
-    .contact-text h2 {
-        font-size: 40px;
-    }
-    .contact-text p {
-        font-size: 14px;
-    }
-    .contact-icons i {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
-        margin: 15px 8px 15px 0;
-    }
-    .contact-form form input,
-    .contact-form form textarea {
-        padding: 12px;
-    }
-    .contact-form form .send {
-        padding: 10px 40px;
-        font-size: 14px;
     }
 }
 
