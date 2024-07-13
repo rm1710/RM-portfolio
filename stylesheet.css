@@ -482,6 +482,9 @@ section {
     transform: scaleX(0);
     transform-origin: left;
 }
+.progress-line.java span {
+    width: 55%;
+}
 .progress-line.html span {
     width: 90%;
 }
@@ -508,6 +511,9 @@ section {
     right: -20px;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
+}
+.progress-line.html span::after {
+    content: "55%";
 }
 .progress-line.html span::after {
     content: "90%";
