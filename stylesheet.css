@@ -265,6 +265,7 @@ section {
 
 #about {
   position: relative;
+  height:90vh;
 }
 
 .about-containers {
@@ -423,7 +424,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 50vh;
   margin: 0 1rem;
 }
 
