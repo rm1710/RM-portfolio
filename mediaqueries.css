@@ -83,6 +83,9 @@
   .logo {
     font-size: 1.5rem;
   }
+  .project-img{
+    height: 60vw;
+  }
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
