@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 50vh;
+    height: 70vh;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -55,7 +55,7 @@
     height: 40vh;
   }
   #profile {
-    height: 40vh;
+    height: 70vh;
     margin-bottom: 0;
   }
   article {
