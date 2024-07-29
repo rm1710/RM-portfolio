@@ -88,6 +88,9 @@
   .project-img{
     height: 60vw;
   }
+  .nav-links-container{
+    margin-top:10vh;
+  }
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
