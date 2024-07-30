@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #000080, #07959f, #5805059e, #0fbfef79);
+  transition: background 1s ease-in-out;
 }
 
 html {
@@ -27,7 +29,6 @@ a,
 }
 
 /* DESKTOP NAV */
-
 nav,
 .nav-links {
   display: flex;
@@ -36,9 +37,23 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 12vh; /* Reduced navbar height */
+  background: linear-gradient(45deg, #1d3557, #45a29e); /* Enhanced gradient background */
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .nav-links {
   gap: 2rem;
   list-style: none;
@@ -46,20 +61,49 @@ nav {
 }
 
 a {
-  color: black;
+  color: white; /* Updated text color to suit the gradient background */
   text-decoration: none;
   text-decoration-color: white;
+  position: relative;
+  transition: color 0.5s ease-in-out; /* Smooth color transition */
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: lightgrey;
+  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  color: lightgrey; /* Updated hover color */
 }
 
 .logo {
   font-size: 2rem;
+  color: white; /* Updated text color to suit the gradient background */
+  animation: logoAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .logo:hover {
@@ -84,13 +128,14 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  transition: transform 0.5s ease-in-out;
 }
 
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+  background-color: white; /* Updated color to suit the gradient background */
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +146,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-links a {
@@ -111,7 +156,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -145,6 +190,7 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
 
 /* SECTIONS */
 
@@ -289,9 +335,8 @@ section {
 }
 
 .arrow {
-  position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
+  bottom: 1.5rem;
 }
 
 .details-container {

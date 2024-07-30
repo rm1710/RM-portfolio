@@ -39,8 +39,18 @@
     <hr />
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile.png" alt="John Doe profile picture" />
+        <img src="./assets/profile.png" class="profile-pic" />
       </div>
+      <style>
+        .profile-pic {
+          border-radius: 50%;
+          box-shadow: 0 0 0 10px white, 0 0 10px 10px rgba(0, 0, 0, 0.5),
+            0 0 20px 10px rgba(0, 0, 0, 0.5);
+          transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+          transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+          animation: profilePicAnimation 5s ease-in-out infinite alternate;
+        }
+      </style>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Ritesh Mishra</h1>
@@ -101,12 +111,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#Skills'"
-      />
     </section>
 
     <hr />
@@ -117,7 +121,7 @@
       <div class="Skills-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="Skills-sub-title">Frontend Technologies</h2>
+            <h2 class="Skills-sub-title">Technical Skills</h2>
             <div class="article-container">
               <article>
                 <img
@@ -126,8 +130,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
-                  <p>experienced</p>
+                  <h3>HTML5</h3>
                 </div>
               </article>
               <article>
@@ -137,19 +140,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
-                  <p>experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>CSS3</h3>
                 </div>
               </article>
               <article>
@@ -160,90 +151,12 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="Skills-sub-title">Backend Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
 
     <hr />
@@ -307,12 +220,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
 
     <hr />
@@ -339,21 +246,9 @@
         </div>
       </div>
     </section>
-
+    <hr />
 
     <footer>
-      <hr />
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <hr />
       <p>Copyright &#169; 2024 Ritesh Mishra. All Rights Reserved.</p>
     </footer>
     <script src="main.js"></script>
