@@ -214,6 +214,14 @@ section {
   gap: 4rem;
   height: 60vh;
 }
+.profile-pic {
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px white, 0 0 10px 10px rgba(0, 0, 0, 0.5),
+    0 0 20px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: profilePicAnimation 5s ease-in-out infinite alternate;
+}
 
 .section__pic-container {
   display: flex;
@@ -223,6 +231,7 @@ section {
 }
 
 .section__text {
+  width:100vh;
   align-self: center;
   text-align: center;
 }
@@ -232,6 +241,7 @@ section {
 }
 
 .section__text__p1 {
+  color:white;
   text-align: center;
 }
 
@@ -469,7 +479,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 50vh;
+  height: 10vh;
   margin: 0 1rem;
 }
 

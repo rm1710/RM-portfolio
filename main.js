@@ -1,10 +1,10 @@
-// var typed = new Typed(".text", {
-//     strings:["Web Developer", "Backend and Frontend Developer", "Youtuber" ],
-//     typeSpeed:30,
-//     backSpeed:80,
-//     backDelay:1200,
-//     loop:true,
-// });
+var typed = new Typed(".text", {
+    strings:["Web Developer", "Backend and Frontend Developer", "Youtuber" ],
+    typeSpeed:30,
+    backSpeed:80,
+    backDelay:1200,
+    loop:true,
+});
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
