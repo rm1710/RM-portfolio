@@ -231,7 +231,6 @@ section {
 
 .section__text {
   padding-top: 50px;
-  padding-left: 100px;
   flex-direction: column;
   height: 190px;
   text-align: center;
