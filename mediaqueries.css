@@ -60,6 +60,9 @@
     height: 80vh;
     margin-bottom: 0;
   }
+  .section__text{
+    padding-left:-100px;
+  }
   
   article {
     font-size: 1rem;
