@@ -57,11 +57,8 @@
     height:10vh;
   }
   #profile {
-    height: 80vh;
+    height: 85vh;
     margin-bottom: 0;
-  }
-  .section__text{
-    padding-left:-150px;
   }
   
   article {
