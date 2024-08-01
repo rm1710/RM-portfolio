@@ -38,7 +38,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 12vh; /* Reduced navbar height */
-  background: linear-gradient(45deg, #1d3557, #45a29e); /* Enhanced gradient background */
+  background: linear-gradient(45deg, #1d3557, #45a29e);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
 }
@@ -61,11 +61,11 @@ nav {
 }
 
 a {
-  color: white; /* Updated text color to suit the gradient background */
+  color: white; 
   text-decoration: none;
   text-decoration-color: white;
   position: relative;
-  transition: color 0.5s ease-in-out; /* Smooth color transition */
+  transition: color 0.5s ease-in-out;
 }
 
 a::after {
@@ -215,12 +215,36 @@ section {
   height: 100vh;
 }
 .profile-pic {
-  position: static;
+  position: relative;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px white, 0 0 10px 10px rgba(0, 0, 0, 0.5),
-    0 0 20px 10px rgba(0, 0, 0, 0.5);
-
+  animation: borderAnimation 3s linear infinite;
+  border: 2px solid transparent; /* initial thin border */
+  padding: 10px; /* add padding to create gap between image and border */
 }
+
+@keyframes borderAnimation {
+  0% {
+    border: 5px solid rgb(229, 4, 249);
+    box-shadow: 0 0 5px rgb(244, 5, 244);
+  }
+  25% {
+    border: 5px solid rgb(9, 229, 249);
+    box-shadow: 0 0 5px rgb(4, 191, 243);
+  }
+  50% {
+    border: 5px solid green;
+    box-shadow: 0 0 5px green;
+  }
+  75% {
+    border: 5px solid yellow;
+    box-shadow: 0 0 5px yellow;
+  }
+  100% {
+    border: 5px solid rgb(0, 145, 255);
+    box-shadow: 0 0 5px rgb(4, 60, 228);
+  }
+}
+
 
 .section__pic-container {
   display: flex;
